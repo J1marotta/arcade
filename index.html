@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAROTTA ARCADE — pick your poison</title>
+    <meta name="description" content="Three homemade multiplayer cabinets: Nitro drag racing, Death Race hidden identity, Dogs of War tactics." />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="bg" aria-hidden="true"></div>
+
+    <header class="hero">
+      <canvas id="drive" width="1200" height="300" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+        <div class="coin">● INSERT COIN ●</div>
+        <h1>MAROTTA ARCADE</h1>
+        <p class="sub">three cabinets · homemade · no quarters required</p>
+        <div class="hero-cta">
+          <a class="play big" href="#cabinets">▶ BROWSE CABINETS</a>
+          <a class="ghost" href="#changelog">patch notes</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="cabinets">
+      <section class="carousel" aria-label="Game cabinets">
+        <button class="car-arrow" id="prev" aria-label="Previous game">◀</button>
+        <article class="cab" id="cab">
+          <div class="cab-top" id="cab-kicker">★ NEW ★</div>
+          <div class="cab-screen" id="cab-screen" aria-hidden="true"></div>
+          <h2 id="cab-title">NITRO</h2>
+          <p class="tag" id="cab-tag"></p>
+          <ul class="chips" id="cab-chips"></ul>
+          <a class="play" id="cab-play" href="#">▶ PLAY</a>
+          <p class="keys" id="cab-keys"></p>
+        </article>
+        <button class="car-arrow" id="next" aria-label="Next game">▶</button>
+      </section>
+      <div class="dots" id="dots" role="tablist" aria-label="Choose game"></div>
+
+      <section class="detail" aria-live="polite">
+        <div class="detail-col">
+          <h3>HOW A MATCH GOES</h3>
+          <ol id="detail-steps"></ol>
+        </div>
+        <div class="detail-col">
+          <h3>CONTROLS</h3>
+          <ul class="controls" id="detail-controls"></ul>
+          <h3>TIPS FROM THE HOUSE</h3>
+          <ul class="tips" id="detail-tips"></ul>
+        </div>
+      </section>
+
+      <section class="changelog" id="changelog">
+        <h3>PATCH NOTES</h3>
+        <ul>
+          <li><b>2026-09-04</b> — NITRO goes endless: gears never run out, ~60s heats, on-car tach, arcade opens its doors.</li>
+          <li><b>2026-09-03</b> — NITRO launches with solo test mode vs 7 CPU.</li>
+          <li><b>Earlier</b> — DEATH RACE (hidden-identity racing) and DOGS OF WAR (tactical warfare) join the arcade.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Servers sleep when idle — the first join after a while takes a few seconds to wake up.</p>
+      <p><a href="https://github.com/J1marotta/Nitro">nitro source</a> · built with Colyseus + Cloudflare Pages + Fly.io</p>
+    </footer>
+
+    <script src="/site.js"></script>
+  </body>
+</html>
