@@ -1,8 +1,30 @@
 // Marotta Arcade hub: carousel data + synthwave hero drive.
 const GAMES = [
   {
-    id: 'nitro',
+    id: 'gridlock',
     kicker: '★ NEW ★',
+    title: 'GRIDLOCK',
+    tag: 'Top-down traffic racer. Whole track visible, 12 color-coded cars, items, vans in the way, forced pit stops.',
+    chips: ['12 racers', '3 laps', 'items + traffic', 'live tune ~'],
+    play: 'https://gridlock-racer.pages.dev',
+    keys: '↑ gas · ↓ brake · ← → steer · Space item / pit · ~ admin',
+    steps: [
+      'Qualify nothing — grid up and wait for green.',
+      'Grab item boxes. Odds favor the back of the pack.',
+      'Watch your tire dot: green → yellow → red means box for the crew.',
+      'Stop in your numbered slot, hit Space with the needle centered.',
+      '3 laps, most positions settled by the flag. Bots fill the grid.',
+    ],
+    controls: [['↑ / ↓', 'gas / brake'], ['← →', 'steer'], ['Space', 'use item / pit timing'], ['~', 'live tune panel']],
+    tips: [
+      'Grass drags and wears tires — stay on the black stuff.',
+      'Traffic vans never move over. Plan the pass early.',
+      'Zap only hits cars ahead — leading is its own defense.',
+    ],
+  },
+  {
+    id: 'nitro',
+    kicker: '★ DRAG ★',
     title: 'NITRO',
     tag: '80s drag showdown. Hold the revs, nail endless shifts, sabotage the leader — then hold on for ~60 seconds.',
     chips: ['2–12 players', '~60s heats', 'endless gears', 'best of 3/5'],
@@ -12,13 +34,13 @@ const GAMES = [
       'Stage: hold ↑ to sit in the 3400–5600 launch zone.',
       'Green! Too low bogs, too high wheelspins.',
       'Shift in the white window — it narrows, then holds, forever.',
-      'Perfects splash neighbours and snipe the leader. 3-in-a-row earns a shield.',
+      'Perfects give a speed boost and build a combo streak.',
       'First across 2200m (or furthest at the whistle) takes the heat.',
     ],
     controls: [['↑', 'hold to rev'], ['Space', 'shift up'], ['Mouse', 'REV / SHIFT touch buttons work too']],
     tips: [
       'Redline cooks heat — 100% means a 2s limp.',
-      'Missed shifts leave you vulnerable to sabotage.',
+      'Early shifts bog you down, late shifts cook the engine.',
       'Back markers get a wider hidden shift window.',
     ],
   },
