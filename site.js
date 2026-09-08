@@ -10,7 +10,7 @@ const GAMES = [
     keys: '↑ gas · ↓ brake · ← → steer · Space item / pit · ~ admin',
     steps: [
       'Pick a track: Speedway circle, Riverside, Hairpin Alley, the Esses — or paint your own.',
-      'Grab item boxes. Odds favor the back of the pack.',
+      'Grab item boxes: rocket boost for straights, oil to drop behind.',
       'Watch tire life: green → yellow → flashing red means pit now.',
       'Stop anywhere in the pit lane, hit Space with the needle centered.',
       '3 laps, most positions settled by the flag. Bots fill the grid.',
@@ -19,7 +19,7 @@ const GAMES = [
     tips: [
       'Grass drags and wears tires — stay on the black stuff.',
       'Traffic vans never move over. Plan the pass early.',
-      'Zap only hits cars ahead — leading is its own defense.',
+      'Oil only spins others — you drive over your own slick free.',
     ],
   },
   {
