@@ -4,8 +4,8 @@ const GAMES = [
     id: 'gridlock',
     kicker: '★ NEW ★',
     title: 'GRIDLOCK',
-    tag: 'Top-down traffic racer. 4 tracks plus your own painted loops, 12 color-coded cars, items, vans, forced pits.',
-    chips: ['12 racers', '4 tracks + studio', 'bridges & tunnels', 'live tune ~'],
+    tag: 'Top-down traffic racer. 3 tracks plus your own painted loops, 12 color-coded cars, items, vans, forced pits.',
+    chips: ['12 racers', '3 tracks + studio', 'bridges & tunnels', 'live tune ~'],
     play: 'https://gridlock-racer.pages.dev',
     keys: '↑ gas · ↓ brake · ← → steer · Space item / pit · ~ admin',
     steps: [
